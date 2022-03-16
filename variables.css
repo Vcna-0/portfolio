@@ -1,0 +1,15 @@
+:root {
+  --gradient: linear-gradient(
+    90.13deg,
+    rgba(21, 238, 225, 0.85) 28.91%,
+    rgba(107, 108, 173, 0.85) 48.61%,
+    rgba(238, 21, 125, 0.85) 98.67%
+  );
+
+  --font-primary: "Hind Vadodara", sans-serif;
+  --font-secondary: "Chivo", sans-serif;
+  --font: "Work Sans", sans-serif;
+
+  --color-white: #faf5f0;
+  --color-black: #172130;
+}
