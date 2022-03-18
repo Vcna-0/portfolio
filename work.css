@@ -1,0 +1,65 @@
+main {
+  max-width: 100%;
+}
+
+.myWork {
+  display: flex;
+  align-items: center;
+  max-width: 85%;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+.myWork__line {
+  content: "";
+  width: 85%;
+  height: 0.3125rem;
+  background: var(--gradient);
+}
+
+.myWork__title {
+  font-family: var(--font-secondary);
+  font-size: 1.875rem;
+  font-weight: 300;
+  color: var(--color-white);
+}
+
+@media only screen and (max-width: 1000px) {
+  .myWork {
+    max-width: 95%;
+  }
+
+  .myWork__line {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .myWork {
+    position: relative;
+    max-width: 100%;
+    align-items: end;
+    flex-direction: column-reverse;
+  }
+
+  .myWork__line {
+    width: 100%;
+    height: 1rem;
+  }
+
+  .myWork__title {
+    position: absolute;
+    padding-right: 1.875rem;
+  }
+}
+
+/* GRID */
+
+.grid {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
