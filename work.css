@@ -89,8 +89,8 @@ main {
   /* top: 0; */
   left: 0;
   padding: 20px;
-  background: var(--gradient1);
-  color: #ed4e6e;
+  background: #223046;
+  color: rgba(238, 21, 126, 0.678);
 }
 
 .grid figcaption h3 {
@@ -107,12 +107,13 @@ main {
 
 .grid figcaption a {
   font-family: var(--font-primary);
+  text-decoration: none;
   text-align: center;
   padding: 5px 10px;
   border-radius: 2px;
   display: inline-block;
-  background: #ed4e6e;
-  color: #fff;
+  background: rgba(21, 238, 225, 0.85);
+  color: var(--color-black);
 }
 
 .cs-style-3 figure {
