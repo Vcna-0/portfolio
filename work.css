@@ -13,7 +13,8 @@ main {
 .myWork__line {
   content: "";
   width: 85%;
-  height: 0.3125rem;
+  height: 0.4125rem;
+  border-radius: 0.125rem;
   background: var(--gradient);
 }
 
@@ -62,6 +63,7 @@ main {
   margin: auto;
   gap: 30px;
   flex-wrap: wrap;
+  margin-bottom: 112px;
 }
 
 .grid li {

@@ -6,10 +6,17 @@
     rgba(238, 21, 125, 0.85) 98.67%
   );
 
-  --gradient1: linear-gradient(
+  --gradientInverse: linear-gradient(
     90.13deg,
-    rgb(21, 238, 223) 50%,
-    rgb(107, 108, 173) 100%
+    rgba(238, 21, 125, 0.85) 28.91%,
+    rgba(107, 108, 173, 0.85) 48.61%,
+    rgba(21, 238, 225, 0.85) 98.67%
+  );
+
+  --gradient2: linear-gradient(
+    90deg,
+    rgb(107, 108, 173) 40%,
+    rgb(238, 21, 126) 100%
   );
 
   --font-primary: "Hind Vadodara", sans-serif;
