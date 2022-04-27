@@ -75,80 +75,71 @@ main {
   position: relative;
 }
 
-.grid figure {
+.card {
   margin: 0;
   position: relative;
+  padding: .9375rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  overflow: hidden;
 }
 
-.grid figure img {
+.card img {
   max-width: 100%;
   display: block;
   position: relative;
+  transition: transform 0.4s;
 }
 
-.grid figcaption {
+.card:hover img {
+  transform: translateY(-50px);
+}
+
+.card__body {
   position: absolute;
-  /* top: 0; */
   left: 0;
   padding: 20px;
+  height: 100px;
+  width: 100%;
+  top: auto;
+  bottom: 0;
   background: #223046;
   color: rgba(238, 21, 126, 0.678);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-.grid figcaption h3 {
+.card__body h3 {
   margin: 0;
   padding: 0;
   color: #fff;
   font-family: var(--font);
 }
 
-.grid figcaption span {
+.card__body span {
   font-family: var(--font-secondary);
   font-weight: 400;
 }
 
-.grid figcaption a {
+.card__body a {
   font-family: var(--font-primary);
   text-decoration: none;
   text-align: center;
   padding: 5px 10px;
   border-radius: 2px;
   display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
   background: rgba(21, 238, 225, 0.85);
   color: var(--color-black);
 }
 
-.cs-style-3 figure {
-  overflow: hidden;
-}
-
-.cs-style-3 figure img {
-  transition: transform 0.4s;
-}
-
-.cs-style-3 figure:hover img {
-  transform: translateY(-50px);
-}
-
-.cs-style-3 figcaption {
-  height: 100px;
-  width: 100%;
-  top: auto;
-  bottom: 0;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform 0.4s, opacity 0.1s 0.3s;
-}
-
-.cs-style-3 figure:hover figcaption,
-.cs-style-3 figure.cs-hover figcaption {
+.card:hover .card__body,
+.card.cs-hover .card__body {
   opacity: 1;
   transform: translateY(0px);
   transition: transform 0.4s, opacity 0.1s;
 }
 
-.cs-style-3 figcaption a {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
