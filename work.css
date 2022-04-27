@@ -137,6 +137,11 @@ main {
   color: var(--color-black);
 }
 
+.card__body a:hover{
+  background: rgba(238, 21, 126, 0.678);
+  color: #fff;
+}
+
 .card:hover .card__body,
 .card.cs-hover .card__body {
   opacity: 1;
