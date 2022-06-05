@@ -13,16 +13,22 @@ main {
 .myWork__line {
   content: "";
   width: 85%;
-  height: 0.4125rem;
+  /* height: 0.4125rem; */
+  height: 0.1rem;
   border-radius: 0.125rem;
   background: var(--gradient);
+  box-shadow: 0 0 5px -1px #FFF, 0 0 10px 1px #FF0DBC;
+  /* box-shadow: 0 0 5px -1px #FFF, 0 0 10px 2px #FF0DBC; */
 }
 
 .myWork__title {
-  font-family: var(--font-secondary);
+  font-family: var(--font);
   font-size: 1.875rem;
   font-weight: 300;
   color: var(--color-white);
+  /* text-shadow: #38F2E0 0px 0px 8px,#38F2E0 1px 1px 0px; */
+  text-shadow: #38F2E0 0px 0px 8px,#f51eaf 1px 1px 0px;
+  /* text-shadow: #38F2E0 0px 0px 8px,#f51eaf 1px 1px 0px, #f3904e -1px -1px 0px; */
 }
 
 @media only screen and (max-width: 1000px) {
@@ -148,4 +154,3 @@ main {
   transform: translateY(0px);
   transition: transform 0.4s, opacity 0.1s;
 }
-

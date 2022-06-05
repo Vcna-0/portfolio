@@ -1,10 +1,18 @@
 :root {
-  --gradient: linear-gradient(
+  /* --gradient: linear-gradient(
     90.13deg,
     rgba(21, 238, 225, 0.85) 28.91%,
     rgba(107, 108, 173, 0.85) 48.61%,
     rgba(238, 21, 125, 0.85) 98.67%
+  ); */
+
+  --gradient: linear-gradient(
+    90.13deg,
+    rgba(245, 145, 79, 0.993) 28.91%,
+    rgba(253, 124, 150, 0.932) 48.61%,
+    rgba(255, 13, 186, 0.959) 98.67%
   );
+
 
   --gradientInverse: linear-gradient(
     90.13deg,
@@ -18,11 +26,18 @@
     rgb(107, 108, 173) 40%,
     rgb(238, 21, 126) 100%
   );
-
+/* 
   --font-primary: "Hind Vadodara", sans-serif;
   --font-secondary: "Chivo", sans-serif;
-  --font: "Work Sans", sans-serif;
+  --font: "Work Sans", sans-serif; */
+
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  --font: 'Roboto Mono', monospace;
 
   --color-white: #faf5f0;
   --color-black: #172130;
 }
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Roboto Mono', monospace; */
