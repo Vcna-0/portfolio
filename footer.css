@@ -9,9 +9,10 @@
 .contact__line {
   content: "";
   width: 70%;
-  height: 0.4125rem;
+  height: 0.1rem;
   background: var(--gradientInverse);
   border-radius: 0.125rem;
+  box-shadow: 0 0 5px -1px #FFF, 0 0 10px 1px #FF0DBC;
 }
 
 .contact__title {
@@ -19,6 +20,7 @@
   font-size: 1.875rem;
   font-weight: 300;
   color: var(--color-white);
+  text-shadow: #38F2E0 0px 0px 8px,#f51eaf 1px 1px 0px;
 }
 
 @media only screen and (max-width: 1250px) {

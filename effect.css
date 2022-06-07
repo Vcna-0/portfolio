@@ -1,0 +1,105 @@
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{"$animationName"} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animationName} {
+    @content;
+  }
+
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+.loader-container {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    -moz-animation: scaleUp 0.5s linear;
+    -webkit-animation: scaleUp 0.5s linear;
+    animation: scaleUp 0.5s linear;
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+.loader {
+    background: #ff0c0c;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjAzOTYxNCIgeTE9IjAuOTUyNzkiIHgyPSIxLjAzOTYxNCIgeTI9IjAuMDQ3MjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjBjMGMiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMWQ0MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background: -moz-linear-gradient(40deg, #ff0c0c, #21d400);
+    background: -webkit-linear-gradient(40deg, #ff0c0c, #21d400);
+    background: linear-gradient(50deg, #ff0c0c, #21d400);
+    border-radius: 10px;
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+    animation: filterHue 2.5s linear infinite;
+    height: 100%;
+    width: 100%;
+    transform: rotate(0deg);
+  }
+
+
+.loader:after {
+    content:'';
+    position:absolute;
+    height: 80px;
+    width:80px;
+    left:10px;
+    top:10px;
+    border-radius: 100%;
+}
+
+@keyframes filterHue2 {
+	50%{
+        filter:hue-rotate(1000deg);
+    }
+	100% {
+        filter:hue-rotate(2000deg);
+    }
+}
+
+@keyframes filterHue {
+	50%{
+        filter:hue-rotate(1000deg);
+    }
+	100% {
+        filter: hue-rotate(2000deg);
+	    transform: rotate(360deg);
+    }
+}
+@keyframes scaleUp {
+	50%{
+        transform: scale(0.5);
+        opacity: 1
+    }
+	100% {
+        transform: scale(0.25);
+    }
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+	.loader {
+		background: linear-gradient(50deg,rgba(240, 0, 80, 1),#2380ff) !important; 
+	}
+} 
+
+/* CIRCLE  */
+
+/* .circle{
+    width: 40px;
+    height: 40px;
+  /*   background-color: lightgrey; */
+  /*   border: 1px solid #ccc; */
+    /* border-radius: 50%;
+    position: absolute;
+  }
+    */

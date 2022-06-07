@@ -35,9 +35,11 @@
 }
 
 .heading__pres-name .gradient {
-  background: var(--gradient);
+  /* background: var(--gradient);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: #fff;
+  text-shadow: #38F2E0 2px 2px 3px,#f51eaf -2px -2px 3px;
 }
 
 .heading__pres-title {
